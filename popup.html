@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels & Shorts Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-icon">🎬</div>
+        <h1 class="header-title">Reels & Shorts Tracker</h1>
+        <div class="shame-quote" id="shame-quote">
+          Time is the most valuable thing we have...
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="stats-grid">
+          <!-- Instagram Reels Stats -->
+          <div class="stat-card instagram">
+            <div class="stat-header">
+              <div class="stat-icon">📸</div>
+              <h2>Instagram Reels</h2>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number" id="reels-count">0</div>
+              <div class="stat-label">Videos Watched</div>
+              <div class="stat-time" id="reels-time">0m 0s</div>
+              <div class="stat-label">Total Time</div>
+            </div>
+          </div>
+
+          <!-- YouTube Shorts Stats -->
+          <div class="stat-card youtube">
+            <div class="stat-header">
+              <div class="stat-icon">📱</div>
+              <h2>YouTube Shorts</h2>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number" id="shorts-count">0</div>
+              <div class="stat-label">Videos Watched</div>
+              <div class="stat-time" id="shorts-time">0m 0s</div>
+              <div class="stat-label">Total Time</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Today's Stats -->
+        <div class="today-stats">
+          <h3>Today's Activity</h3>
+          <div class="today-grid">
+            <div class="today-item">
+              <span class="today-label">Reels:</span>
+              <span class="today-value" id="today-reels">0 videos, 0m</span>
+            </div>
+            <div class="today-item">
+              <span class="today-label">Shorts:</span>
+              <span class="today-value" id="today-shorts">0 videos, 0m</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combined Stats -->
+        <div class="combined-stats">
+          <div class="combined-item">
+            <span class="combined-label">Total Videos:</span>
+            <span class="combined-value" id="total-videos">0</span>
+          </div>
+          <div class="combined-item">
+            <span class="combined-label">Total Time:</span>
+            <span class="combined-value" id="total-time">0h 0m</span>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <button class="btn btn-secondary" id="reset-btn">
+            Reset All Data
+          </button>
+          <button class="btn btn-primary" id="refresh-btn">
+            Refresh Stats
+          </button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-text">Track your short-form video consumption</div>
+      </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <script src="dist/popup.js"></script>
+  </body>
+</html>

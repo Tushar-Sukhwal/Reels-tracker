@@ -1,0 +1,17 @@
+{
+  "name": "reels-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to track Instagram reels and YouTube shorts viewing time",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.276",
+    "@types/node": "^24.0.15",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {}
+}
